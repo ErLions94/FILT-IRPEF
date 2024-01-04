@@ -12,69 +12,88 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <style>
             body {margin: 0px;}
-            .toggle-section {display: none;}
             .up {text-align: center;}
+            .vertenza {text-align: center;}
+            .vertenza h1 {font-size: 50px;}
             .up img {height: 250px;}
-            .papero {font-size: 25px; padding-left: 20px; text-align: center; width: 50%; margin: 0 auto;}
-            .papero1 {font-size: 25px; padding-left: 20px; text-align: center; width: 50%; margin: 0 auto;}
+            .papero {font-size: 30px; padding-left: 20px; text-align: center; width: 50%; margin: 0 auto; width: 50%;}
+            .papero1 {font-size: 30px; padding-left: 20px; text-align: center; width: 50%; margin: 0 auto; width: 50%;}
+            .papero2 {font-size: 30px; padding-left: 20px; text-align: center; width: 50%; margin: 0 auto; width: 50%;}
             .frase {text-align: center;}
-            .frase h1 {width: 70%; margin: 0 auto; font-size: 28px;}
-            .frase h2 {font-size: 26px;}
+            .frase h1 {width: 70%; margin: 0 auto; font-size: 32px;}
+            .frase h2 {font-size: 30px;}
             .iscrizione img {width: 45%;}
             
             @media (max-width: 1200px) {
-                .up img {height: 250px;}
-                .papero {font-size: 24px; padding-left: 20px; text-align: center; width: 60%; margin: 0 auto;}
-                .papero1 {font-size: 24px; padding-left: 20px; text-align: center; width: 60%; margin: 0 auto;}
+                .papero {font-size: 30px; padding-left: 20px; text-align: center; margin: 0 auto; width: 60%;}
+                .papero1 {font-size: 30px; padding-left: 20px; text-align: center; margin: 0 auto; width: 60%;}
+                .papero2 {font-size: 30px; padding-left: 20px; text-align: center; margin: 0 auto; width: 60%;}
                 .iscrizione img {width: 50%;}
-                .frase h1 {width: 70%; margin: 0 auto; font-size: 28px;}
-                .frase h2 {font-size: 26px;}
+                .frase h1 {width: 70%; margin: 0 auto; font-size: 32px;}
+                .frase h2 {font-size: 30px;}
             }
             @media (max-width: 980px) {
                 .up img {height: 200px;}
-                .papero {font-size: 18px; padding-left: 15px; text-align: center; width: 70%; margin: 0 auto;}
-                .papero1 {font-size: 18px; padding-left: 15px; text-align: center; width: 70%; margin: 0 auto;}
+                .vertenza h1 {font-size: 42px;}
+                .papero {font-size: 24px; padding-left: 15px; text-align: center; margin: 0 auto; width: 70%;}
+                .papero1 {font-size: 24px; padding-left: 15px; text-align: center; margin: 0 auto; width: 70%;}
+                .papero2 {font-size: 24px; padding-left: 15px; text-align: center; margin: 0 auto; width: 70%;}
                 .iscrizione img {width: 55%;}
-                .frase h1 {width: 70%; margin: 0 auto; font-size: 20px;}
-                .frase h2 {font-size: 18px;}
+                .frase h1 {width: 70%; margin: 0 auto; font-size: 27px;}
+                .frase h2 {font-size: 25px;}
             }
             @media (max-width: 767px) {
                 .up img {height: 150px;}
-                .papero {font-size: 12px; padding-left: 10px; text-align: center; width: 80%; margin: 0 auto;}
-                .papero1 {font-size: 12px; padding-left: 10px; text-align: center; width: 80%; margin: 0 auto;}
+                .vertenza h1 {font-size: 35px;}
+                .papero {font-size: 20px; padding-left: 10px; text-align: center; margin: 0 auto; width: 80%;}
+                .papero1 {font-size: 20px; padding-left: 10px; text-align: center; margin: 0 auto; width: 80%;}
+                .papero2 {font-size: 20px; padding-left: 10px; text-align: center; margin: 0 auto; width: 80%;}
                 .iscrizione img {width: 65%;}
-                .frase h1 {width: 70%; margin: 0 auto; font-size: 13px;}
-                .frase h2 {font-size: 11px;}                
+                .frase h1 {width: 70%; margin: 0 auto; font-size: 24px;}
+                .frase h2 {font-size: 22px;}                
             }
             @media (max-width: 480px) {
                 .up img {height: 100px;}
-                .papero {font-size: 12px; padding-left: 5px; padding-right: 0px; text-align: center; width: 90%; margin: 0 auto;}
-                .papero1 {font-size: 12px; padding-left: 5px; padding-right: 0px; text-align: center; width: 90%; margin: 0 auto;}
+                .vertenza h1 {font-size: 33px;}
+                .papero {font-size: 18px; padding-left: 5px; padding-right: 0px; text-align: center; width: 90%;}
+                .papero1 {font-size: 18px; padding-left: 5px; padding-right: 0px; text-align: center; width: 90%;}
+                .papero2 {font-size: 18px; padding-left: 5px; padding-right: 0px; text-align: center; width: 90%;}
                 .iscrizione img {width: 75%;}
-                .frase h1 {width: 70%; margin: 0 auto; font-size: 13px;}
-                .frase h2 {font-size: 11px;}
+                .frase h1 {width: 70%; margin: 0 auto; font-size: 20px;}
+                .frase h2 {font-size: 18px;}
             }
+
+            .penna {max-height: 0; overflow: hidden; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+
+            .penna1 {max-height: 0; overflow: hidden; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+
+            .penna2 {max-height: 0; overflow: hidden; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+
+            .active {max-height: 2000px;}
 
         </style>
         <div class="up">
             <img src="CGIL.jpg" alt="CGIL"/>
         </div>
-        <div class="papero">
-            <text class="toggle-btn" onclick="toggleSection(1)"><red><strong>Dopo tutti questi scioperi, LA DISCUSSIONE È FINITA QUI?</strong></red></text>
-            <div id="section1" class="toggle-section">
-                <text>NO! La trattativa prosegue nei tavoli nazionali per ottenere rivendicazioni adeguate alle richieste del personale.</text>
-            </div>
+        <div class="vertenza">
+            <h1>VERTENZA MANUTENZIONE</h1>
         </div>
         <div class="papero">
-            <text class="toggle-btn" onclick="toggleSection(2)"><red><strong>ENTRIAMO NEL VIVO! Di cosa si tratta ai tavoli?</strong></red></text>
-            <div id="section2" class="toggle-section">
-                 <text>NUOVO MODELLO: LA VERTICALITÀ<br>Le 3 Direzioni Business hanno presentato le attività principali del nuovo modello di Direzione Tecnica e i processi di internalizzazione/esternalizzazione dentro Trasporto Regionale-IC-AV. In altri termini, l'azienda sta dividendo la manutenzione per divisione e creando una Linea Qualità all'interno delle stesse. I sindacati esprimono preoccupazione per l'esternalizzazione dei processi manutentivi e per la possibilità che si creino picchi di produzione con la conseguente saturazione di alcuni impianti a discapito di altri dove il lavoro calerebbe.</text>
+            <text class="toggle"><red><strong>Dopo gli scioperi (14/04/23 e 13/07/23),<br>LA DISCUSSIONE È FINITA QUI?</strong></red></text>
+            <div class="penna">
+                <text><b>NO!</b> La trattativa prosegue nei tavoli nazionali per ottenere rivendicazioni adeguate alle richieste del personale.</text>
             </div>
         </div>
         <div class="papero1">
-            <text class="toggle-btn" onclick="toggleSection(3)"><red><strong>È SUFFICIENTE?</strong></red></text>
-            <div id="section3" class="toggle-section">
-                <text>NO! La FILT ritiene fondamentale la difesa dei posti di lavoro, con anche nuove assunzioni e la valorizzazione del percorso di crescita professionale basato sulle abilitazioni.</text>
+            <text class="toggle1"><red><strong>ENTRIAMO NEL VIVO!<br>Di cosa si tratta ai tavoli?</strong></red></text>
+            <div class="penna1">
+                 <text>NUOVO MODELLO: <b>LA VERTICALITÀ</b><br>Le 3 Direzioni Business hanno presentato le attività principali del nuovo modello di Direzione Tecnica e i processi di internalizzazione/esternalizzazione dentro Trasporto Regionale-IC-AV. In altri termini, l'azienda sta dividendo la manutenzione per divisione e creando una Linea Qualità all'interno delle stesse. I sindacati esprimono preoccupazione per l'esternalizzazione dei processi manutentivi e per la possibilità che si creino picchi di produzione con la conseguente saturazione di alcuni impianti a discapito di altri dove il lavoro calerebbe.</text>
+            </div>
+        </div>
+        <div class="papero2">
+            <text class="toggle2"><red><strong>Per la Filt CGIL e i lavoratori<br>È SUFFICIENTE?</strong></red></text>
+            <div class="penna2">
+                <text><b>NO!</b> La FILT ritiene fondamentale la difesa dei posti di lavoro, con anche nuove assunzioni e la valorizzazione del percorso di crescita professionale basato sulle abilitazioni.</text>
             </div>
         </div>
         <div class="albicocco"><div class="iscrizione">
@@ -85,24 +104,23 @@
             <h2><i>Gino Strada</i></h2>
         </div>
         <script>
-            function toggleSection(sectionNumber) {
-             var section = document.getElementById("section" + sectionNumber);
-             var otherSections = document.getElementsByClassName("toggle-section");
+            let item = document.querySelector('.toggle');
+            let penna = document.querySelector('.penna');
+            item.addEventListener("click", function() {
+                penna.classList.toggle('active');
+            });            
         
-             // Chiudi tutte le altre sezioni
-             for (var i = 0; i < otherSections.length; i++) {
-               if (otherSections[i] !== section) {
-                    otherSections[i].style.display = "none";
-                 }
-                }
+            let item1 = document.querySelector('.toggle1');
+            let penna1 = document.querySelector('.penna1');
+            item1.addEventListener("click", function() {
+                penna1.classList.toggle('active');
+            });
         
-              // Apri o chiudi la sezione corrente
-               if (section.style.display === "block") {
-                   section.style.display = "none";
-                  } else {
-                   section.style.display = "block";
-                }
-            }
+            let item2 = document.querySelector('.toggle2');
+            let penna2 = document.querySelector('.penna2');
+            item2.addEventListener("click", function() {
+                penna2.classList.toggle('active');
+            });              
         </script>
     </body>
 </html>
