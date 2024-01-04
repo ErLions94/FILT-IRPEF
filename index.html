@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Vertenza MANUTENZIONE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1">
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            body {margin: 0px;}
+            .toggle-section {display: none;}
+            .up {text-align: center;}
+            .up img {height: 250px;}
+            .papero {font-size: 25px; padding-left: 20px; text-align: center; width: 50%; margin: 0 auto;}
+            .papero1 {font-size: 25px; padding-left: 20px; text-align: center; width: 50%; margin: 0 auto;}
+            .frase {text-align: center;}
+            
+            @media (max-width: 1200px) {
+                .papero {font-size: 24px; padding-left: 20px; text-align: center; margin: 0 auto;}
+                .papero1 {font-size: 24px; padding-left: 20px; text-align: center; margin: 0 auto;}
+            }
+            @media (max-width: 980px) {
+                .papero {font-size: 18px; padding-left: 15px; text-align: center; margin: 0 auto;}
+                .papero1 {font-size: 18px; padding-left: 15px; text-align: center; margin: 0 auto;}
+            }
+            @media (max-width: 767px) {
+                .papero {font-size: 12px; padding-left: 10px; text-align: center; margin: 0 auto;}
+                .papero1 {font-size: 12px; padding-left: 10px; text-align: center; margin: 0 auto;}
+            }
+            @media (max-width: 480px) {
+                .papero {font-size: 12px; padding-left: 5px; padding-right: 0px; text-align: center;}
+                .papero1 {font-size: 12px; padding-left: 5px; padding-right: 0px; text-align: center;}
+            }
+
+        </style>
+        <div class="up">
+            <img src="CGIL.jpg" alt="CGIL"/>
+        </div>
+        <div class="papero">
+            <text class="toggle-btn" onclick="toggleSection(1)"><red><strong>Dopo tutti questi scioperi, LA DISCUSSIONE È FINITA QUI?</strong></red></text>
+            <div id="section1" class="toggle-section">
+                <text>NO! La trattativa prosegue nei tavoli nazionali per ottenere rivendicazioni adeguate alle richieste del personale.</text>
+            </div>
+        </div>
+        <div class="papero">
+            <text class="toggle-btn" onclick="toggleSection(2)"><red><strong>ENTRIAMO NEL VIVO! Di cosa si tratta ai tavoli?</strong></red></text>
+            <div id="section2" class="toggle-section">
+                 <text>NUOVO MODELLO: LA VERTICALITÀ<br>Le 3 Direzioni Business hanno presentato le attività principali del nuovo modello di Direzione Tecnica e i processi di internalizzazione/esternalizzazione dentro Trasporto Regionale-IC-AV. In altri termini, l'azienda sta dividendo la manutenzione per divisione e creando una Linea Qualità all'interno delle stesse. I sindacati esprimono preoccupazione per l'esternalizzazione dei processi manutentivi e per la possibilità che si creino picchi di produzione con la conseguente saturazione di alcuni impianti a discapito di altri dove il lavoro calerebbe.</text>
+            </div>
+        </div>
+        <div class="papero1">
+            <text class="toggle-btn" onclick="toggleSection(3)"><red><strong>È SUFFICIENTE?</strong></red></text>
+            <div id="section3" class="toggle-section">
+                <text>NO! La FILT ritiene fondamentale la difesa dei posti di lavoro, con anche nuove assunzioni e la valorizzazione del percorso di crescita professionale basato sulle abilitazioni.</text>
+            </div>
+        </div>
+        <div class="frase">
+            <text>frase motivazionale mancante</text>
+        </div>
+        <script>
+            function toggleSection(sectionNumber) {
+             var section = document.getElementById("section" + sectionNumber);
+             var otherSections = document.getElementsByClassName("toggle-section");
+        
+             // Chiudi tutte le altre sezioni
+             for (var i = 0; i < otherSections.length; i++) {
+               if (otherSections[i] !== section) {
+                    otherSections[i].style.display = "none";
+                 }
+                }
+        
+              // Apri o chiudi la sezione corrente
+               if (section.style.display === "block") {
+                   section.style.display = "none";
+                  } else {
+                   section.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
