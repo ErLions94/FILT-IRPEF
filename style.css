@@ -5,7 +5,10 @@
 }
 
 .papero {
-    border: 5px solid red;
+    border-top: 5px solid red;
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+    border-bottom: none;
     background-color: rgba(255, 0, 0, 0.4);
     margin-bottom: 5px;
     padding-right: 2%;
@@ -13,83 +16,25 @@
 }
 
 .papero1 {
-    border: 5px solid orangered;
-    background-color: rgba(255, 69, 0, 0.8);
+    border-top: 5px solid red;
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+    border-bottom: 5px solid red;
+    background-color: rgba(255, 0, 0, 0.4);
     margin-bottom: 5px;
     padding-right: 2%;
     padding-left: 2%;
 }
 
 .papero2 {
-    border: 5px solid yellow;
-    background-color: rgba(255, 255, 0, 0.4);
+    border-top: none;
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+    border-bottom: 5px solid red;
+    background-color: rgba(255, 0, 0, 0.4);
     margin-bottom: 5px;
     padding-right: 2%;
     padding-left: 2%;
-}
-
-.papero3 {
-    border: 5px solid green;
-    background-color: rgba(0, 128, 0, 0.4);
-    margin-bottom: 5px;
-    padding-right: 2%;
-    padding-left: 2%;
-}
-
-.papero4 {
-    border: 5px solid blue;
-    background-color: rgba(0, 0, 255, 0.4);
-    margin-bottom: 5px;
-    padding-right: 2%;
-    padding-left: 2%;
-}
-
-.papero5 {
-    border: 5px solid purple;
-    background-color: violet;
-    margin-bottom: 5px;
-    padding-right: 2%;
-    padding-left: 2%;
-}
-
-.domande {
-    margin: 5px;
-}
-
-.penna {
-    background-color: white;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-.penna1 {
-    background-color: white;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-.penna2 {
-    background-color: white;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-.penna3 {
-    background-color: white;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-.penna4 {
-    background-color: white;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-.penna5 {
-    background-color: white;
-    padding-left: 2%;
-    padding-right: 2%;
 }
 
 .iscrizione img:hover {
