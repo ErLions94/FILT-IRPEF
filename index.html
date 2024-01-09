@@ -1,15 +1,16 @@
 <html>
     <head>
-        <title>Vertenza MANUTENZIONE</title>
+        <title>Vertenza EQUIPAGGI</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=devide-width, initial-scale=1">
         <meta property="og:title" content="Filt CGIL"/>
-        <meta property="og:description" content="Vertenza MANUTENZIONE"/>
+        <meta property="og:description" content="Vertenza EQUIPAGGI"/>
         <meta property="og:image" content="https://www.radiopiu.net/wordpress/wp-content/uploads/2021/06/FILT-CGIL.png"/>
         <link rel="shortcut icon" type="image/x-icon" href="faviconlogo.ico">
     </head>
     <body>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="app.js"></script>
         <style>
             body {margin: 0px;}
             .up {text-align: center;}
@@ -20,16 +21,22 @@
             .papero {font-size: 30px; padding-left: 20px; text-align: center; width: 50%; margin: 0 auto; width: 50%;}
             .papero1 {font-size: 30px; padding-left: 20px; text-align: center; width: 50%; margin: 0 auto; width: 50%;}
             .papero2 {font-size: 30px; padding-left: 20px; text-align: center; width: 50%; margin: 0 auto; width: 50%;}
+            .papero3 {font-size: 30px; padding-left: 20px; text-align: center; width: 50%; margin: 0 auto; width: 50%;}
+            .papero4 {font-size: 30px; padding-left: 20px; text-align: center; width: 50%; margin: 0 auto; width: 50%;}
+            .papero5 {font-size: 30px; padding-left: 20px; text-align: center; width: 50%; margin: 0 auto; width: 50%;}
             .frase {text-align: center;}
             .frase h1 {width: 70%; margin: 0 auto; font-size: 32px;}
             .frase h2 {font-size: 30px;}
             .iscrizione img {width: 45%;}
-            
+
             @media (max-width: 1200px) {
                 .data h2 {width: 60%; margin: 0 auto; font-size: 32px;}
                 .papero {font-size: 30px; padding-left: 20px; text-align: center; margin: 0 auto; width: 60%;}
                 .papero1 {font-size: 30px; padding-left: 20px; text-align: center; margin: 0 auto; width: 60%;}
                 .papero2 {font-size: 30px; padding-left: 20px; text-align: center; margin: 0 auto; width: 60%;}
+                .papero3 {font-size: 30px; padding-left: 20px; text-align: center; margin: 0 auto; width: 60%;}
+                .papero4 {font-size: 30px; padding-left: 20px; text-align: center; margin: 0 auto; width: 60%;}
+                .papero5 {font-size: 30px; padding-left: 20px; text-align: center; margin: 0 auto; width: 60%;}
                 .iscrizione img {width: 50%;}
                 .frase h1 {width: 70%; margin: 0 auto; font-size: 32px;}
                 .frase h2 {font-size: 30px;}
@@ -41,6 +48,9 @@
                 .papero {font-size: 24px; padding-left: 15px; text-align: center; margin: 0 auto; width: 70%;}
                 .papero1 {font-size: 24px; padding-left: 15px; text-align: center; margin: 0 auto; width: 70%;}
                 .papero2 {font-size: 24px; padding-left: 15px; text-align: center; margin: 0 auto; width: 70%;}
+                .papero3 {font-size: 24px; padding-left: 15px; text-align: center; margin: 0 auto; width: 70%;}
+                .papero4 {font-size: 24px; padding-left: 15px; text-align: center; margin: 0 auto; width: 70%;}
+                .papero5 {font-size: 24px; padding-left: 15px; text-align: center; margin: 0 auto; width: 70%;}
                 .iscrizione img {width: 55%;}
                 .frase h1 {width: 70%; margin: 0 auto; font-size: 27px;}
                 .frase h2 {font-size: 25px;}
@@ -52,19 +62,25 @@
                 .papero {font-size: 20px; padding-left: 10px; text-align: center; margin: 0 auto; width: 80%;}
                 .papero1 {font-size: 20px; padding-left: 10px; text-align: center; margin: 0 auto; width: 80%;}
                 .papero2 {font-size: 20px; padding-left: 10px; text-align: center; margin: 0 auto; width: 80%;}
+                .papero3 {font-size: 20px; padding-left: 10px; text-align: center; margin: 0 auto; width: 80%;}
+                .papero4 {font-size: 20px; padding-left: 10px; text-align: center; margin: 0 auto; width: 80%;}
+                .papero5 {font-size: 20px; padding-left: 10px; text-align: center; margin: 0 auto; width: 80%;}
                 .iscrizione img {width: 65%;}
                 .frase h1 {width: 70%; margin: 0 auto; font-size: 24px;}
-                .frase h2 {font-size: 22px;}                
+                .frase h2 {font-size: 22px;}
             }
             @media (max-width: 480px) {
-                .up img {height: 120px;}
+                .up img {height: 100px;}
                 .vertenza h1 {font-size: 33px;}
-                .data h2 {width: 95%; margin: 0 auto; font-size: 20px;}
-                .papero {font-size: 17px; padding-left: 5px; padding-right: 0px; text-align: center; width: 95%;}
-                .papero1 {font-size: 17px; padding-left: 5px; padding-right: 0px; text-align: center; width: 95%;}
-                .papero2 {font-size: 17px; padding-left: 5px; padding-right: 0px; text-align: center; width: 95%;}
-                .iscrizione img {width: 85%;}
-                .frase h1 {width: 85%; margin: 0 auto; font-size: 20px;}
+                .data h2 {width: 90%; margin: 0 auto; font-size: 20px;}
+                .papero {font-size: 18px; padding-left: 5px; padding-right: 0px; text-align: center; width: 90%;}
+                .papero1 {font-size: 18px; padding-left: 5px; padding-right: 0px; text-align: center; width: 90%;}
+                .papero2 {font-size: 18px; padding-left: 5px; padding-right: 0px; text-align: center; width: 90%;}
+                .papero3 {font-size: 18px; padding-left: 5px; padding-right: 0px; text-align: center; width: 90%;}
+                .papero4 {font-size: 18px; padding-left: 5px; padding-right: 0px; text-align: center; width: 90%;}
+                .papero5 {font-size: 18px; padding-left: 5px; padding-right: 0px; text-align: center; width: 90%;}
+                .iscrizione img {width: 75%;}
+                .frase h1 {width: 70%; margin: 0 auto; font-size: 20px;}
                 .frase h2 {font-size: 18px;}
             }
 
@@ -74,6 +90,12 @@
 
             .penna2 {max-height: 0; overflow: hidden; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
 
+            .penna3 {max-height: 0; overflow: hidden; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+
+            .penna4 {max-height: 0; overflow: hidden; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+
+            .penna5 {max-height: 0; overflow: hidden; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+
             .active {max-height: 2000px;}
 
         </style>
@@ -81,28 +103,48 @@
             <img src="CGIL.jpg" alt="CGIL"/>
         </div>
         <div class="vertenza">
-            <h1>VERTENZA MANUTENZIONE</h1>
+            <h1>VERTENZA EQUIPAGGI</h1>
         </div>
         <div class="data">
             <h2>11.01.2024</h2>
         </div>
-        <div class="papero">
-            <text class="toggle"><red><strong>Dopo gli scioperi (14/04/23 e 13/07/23),<br>LA DISCUSSIONE È FINITA QUI?</strong></red></text>
-            <div class="penna">
-                <text><b>NO!</b> La trattativa prosegue nei tavoli nazionali per ottenere rivendicazioni adeguate alle richieste del personale.</text>
-            </div>
-        </div>
-        <div class="papero1">
-            <text class="toggle1"><red><strong>ENTRIAMO NEL VIVO!<br>Di cosa si tratta ai tavoli?</strong></red></text>
+        <div class="domande">
+         <div class="papero">
+                <text class="toggle"><red><strong>LA DISCUSSIONE È FINITA?</strong></red></text>
+                <div class="penna">
+                    <text><b>NO! </b>Dopo gli scioperi del 14/04/2023 e del 13/07/2023, la trattativa prosegue nei tavoli nazionali per ottenere rivendicazioni adeguate alle richieste del personale.</text>
+                </div>
+         </div>           
+         <div class="papero1">
+            <text class="toggle1"><red><strong>TRASFERIMENTI</strong></red></text>
             <div class="penna1">
-                 <text>NUOVO MODELLO: <b>LA VERTICALITÀ</b><br>Le 3 Direzioni Business hanno presentato le attività principali del nuovo modello di Direzione Tecnica e i processi di internalizzazione/esternalizzazione dentro Trasporto Regionale-IC-AV. In altri termini, l'azienda sta dividendo la manutenzione per divisione e creando una Linea Qualità all'interno delle stesse.</text>
+                <text>Si parla di aprire alla possibilità di una mobilità interdivisionale, ossia di aprire ai trasferimenti tra tutte le divisioni e su tutto il territorio nazionale.</text>
             </div>
-        </div>
-        <div class="papero2">
-            <text class="toggle2"><red><strong>Per la Filt CGIL e i lavoratori<br>È SUFFICIENTE?</strong></red></text>
+         </div>
+         <div class="papero2">
+            <text class="toggle2"><red><strong>ASSUNZIONI</strong></red></text>
             <div class="penna2">
-                <text><b>NO!</b>I sindacati esprimono preoccupazione per l'esternalizzazione dei processi manutentivi e per la possibilità che si creino picchi di produzione con la conseguente saturazione di alcuni impianti a discapito di altri dove il lavoro calerebbe. La <b>FILT</b> ritiene fondamentale la difesa dei posti di lavoro, con anche nuove assunzioni e la valorizzazione del percorso di crescita professionale basato sulle abilitazioni. Rivestono anche, in tale ottica, importanza cruciale gli investimenti e gli ammodernamenti sia degli impianti che delle postazioni di lavoro.</text>
+                <text>È stata avanzata la proposta di nuove assunzioni nell'arco del 2024 per mitigare i carichi di lavoro esistenti.</text>
             </div>
+         </div>
+         <div class="papero3">
+            <text class="toggle3"><red><strong>REFEZIONE</strong></red></text>
+            <div class="penna3">
+                <text>La discussione è incentrata sull'aumento di 10 minuti della pausa refezione. Questa sarebbe innalzata così fino ad un minimo di 40 minuti, ma lasciando la possibilità di ridurla in fase di contrattazione territoriale, per migliorare la vivibilità del turno stesso.</text>
+            </div>
+         </div>
+         <div class="papero4">
+            <text class="toggle4"><red><strong>DORMITE</strong></red></text>
+            <div class="penna4">
+                <text>Sono state portate avanti iniziative diverse in base alle varie Divisioni Business:<br>DBRSI e DBAV: riduzione a massimo 7 ore per la prestazione di ritorno.<br>DBIC: servizio di ritorno con inizio non prima delle 05:00.</text>
+            </div>
+         </div>
+         <div class="papero5">
+            <text class="toggle5"><red><strong>È SUFFICIENTE?</strong></red></text>
+            <div class="penna5">
+                <text><b>NO! </b>La FILT ritiene che tutte queste proposte siano inutili se non inserite in un quadro più ampio di CONTRATTAZIONE TERRITORIALE, in cui siano discussi e concordati gli allacciamenti per rendere realmente più vivibile il turno da parte del personale. Inoltre tutte queste proposte da parte aziendale sono subordinate al piano di assunzioni, quindi non attuabili prima del 2025. <b>Il personale invece deve avere una risposta più rapida!</b><br>Inoltre l'azienda continua a glissare sul tema, scottante ad avviso del sindacato, del distoglimento del personale dal turno IVU attuato in modo unilaterale senza il rispetto di alcuna normativa. Il personale ha bisogno di soluzioni e risposte attuabili ed immediate!</text>
+            </div>
+         </div>
         </div>
         <div class="albicocco"><div class="iscrizione">
             <a href="https://www.filtcgil.it/filt/1819-scelta-iscrizione-filt.html"><img src="iscrizione.webp" alt="iscrizione"></a>
@@ -128,7 +170,26 @@
             let penna2 = document.querySelector('.penna2');
             item2.addEventListener("click", function() {
                 penna2.classList.toggle('active');
-            });              
+            });
+        
+            let item3 = document.querySelector('.toggle3');
+            let penna3 = document.querySelector('.penna3');
+            item3.addEventListener("click", function() {
+                penna3.classList.toggle('active');
+            });
+        
+            let item4 = document.querySelector('.toggle4');
+            let penna4 = document.querySelector('.penna4');
+            item4.addEventListener("click", function() {
+                penna4.classList.toggle('active');
+            });
+        
+            let item5 = document.querySelector('.toggle5');
+            let penna5 = document.querySelector('.penna5');
+            item5.addEventListener("click", function() {
+                penna5.classList.toggle('active');
+            });
+        
         </script>
     </body>
 </html>
