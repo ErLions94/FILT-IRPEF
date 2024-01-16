@@ -1,15 +1,33 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
   }
   
-  .page {
-    height: 100vh;
+  .fixed-part {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    /* Aggiungi stili aggiuntivi secondo necessità */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .mobile-part {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  @media (min-width: 768px) {
+    /* Media query per schermi larghi (ad esempio, tablet e desktop) */
+    .fixed-part {
+      width: 30%; /* Adatta la larghezza della parte fissa secondo le tue esigenze */
+      float: left;
+    }
+  
+    .mobile-part {
+      width: 70%; /* Adatta la larghezza della parte mobile secondo le tue esigenze */
+      float: right;
+    }
   }
   
