@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,9 +23,12 @@
 <body>
   <div id="dynamic-text">
     <!-- Contenuto dinamico del testo -->
-    <script>
-      // Codice JavaScript per modificare il testo in base alla larghezza dello schermo
-      const dynamicText = document.getElementById('dynamic-text');
+  </div>
+
+  <script>
+    const dynamicText = document.getElementById('dynamic-text');
+
+    function updateTextBasedOnScreenWidth() {
       const windowWidth = window.innerWidth;
 
       if (windowWidth < 600) {
@@ -36,7 +38,13 @@
       } else {
         dynamicText.textContent = "Testo per schermi larghi";
       }
-    </script>
-  </div>
+    }
+
+    // Esegui l'aggiornamento iniziale del testo
+    updateTextBasedOnScreenWidth();
+
+    // Aggiungi un listener per l'evento di ridimensionamento della finestra
+    window.addEventListener('resize', updateTextBasedOnScreenWidth);
+  </script>
 </body>
 </html>
