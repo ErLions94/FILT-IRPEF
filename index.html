@@ -1,48 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: red;
+    #dynamic-text {
+      font-size: 16px; /* Dimensione predefinita per schermi di qualsiasi larghezza */
     }
 
-    .fixed-div {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: red;
-      color: black;
-      text-align: center;
+    @media (min-width: 600px) {
+      #dynamic-text {
+        font-size: 20px; /* Modifica la dimensione del testo per schermi più larghi (es. tablet) */
+      }
     }
 
-    .fixed-div img {
-        width: 80%;
-    }
-
-    .fixed-div h1 {
-        font-size: 50px;
-    }
-
-    .content {
-      margin-top: 500px; /* Aggiungi uno spazio in cima al contenuto per evitare l'overlap con il div fisso */
-      padding: 20px;
+    @media (min-width: 1024px) {
+      #dynamic-text {
+        font-size: 24px; /* Modifica la dimensione del testo per schermi ancora più larghi (es. desktop) */
+      }
     }
   </style>
 </head>
 <body>
-  <div class="fixed-div">
-    <h1>SPAZIO FILT</h1>
-    <img src="SITOCGIL.jpg" alt="CGIL"/>
-  </div>
+  <div id="dynamic-text">
+    <!-- Contenuto dinamico del testo -->
+    <script>
+      // Codice JavaScript per modificare il testo in base alla larghezza dello schermo
+      const dynamicText = document.getElementById('dynamic-text');
+      const windowWidth = window.innerWidth;
 
-  <div class="content">
-    <h2>Contenuto della Pagina</h2>
-    <p>...<br>babgalgvksnvkjah asjv uidk kw h  hkes ksh hs hsh <br>kkkkk<br>jskdhfksjvs<br>nvsjbvks hls h<br>nn</p>
-    <img src="CGIL.jpg" alt="kk"/>
-    <!-- Altro contenuto della pagina -->
+      if (windowWidth < 600) {
+        dynamicText.textContent = "Testo per schermi stretti";
+      } else if (windowWidth < 1024) {
+        dynamicText.textContent = "Testo per schermi di larghezza media";
+      } else {
+        dynamicText.textContent = "Testo per schermi larghi";
+      }
+    </script>
   </div>
 </body>
 </html>
