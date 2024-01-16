@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-y: hidden; /* Nasconde la barra di scorrimento verticale del body */
   }
   
   .page {
@@ -10,27 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f12020;
-    /* Aggiungi stili aggiuntivi secondo necessità */
-  }
-
-  .page1 {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0da80d;
-    /* Aggiungi stili aggiuntivi secondo necessità */
-  }
-
-  .page2 {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #3213ad;
+    background-color: #f0f0f0;
     /* Aggiungi stili aggiuntivi secondo necessità */
   }
   

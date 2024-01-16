@@ -1,22 +1,25 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="fullpage.min.css">
-  <title>Sc</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>Scrolling Website</title>
 </head>
 <body>
-  <div id="fullpage">
-    <div class="section">Page 1</div>
-    <div class="section">Page 2</div>
-    <div class="section">Page 3</div>
-    <!-- Aggiungi altre sezioni se necessario -->
+  <div class="page" id="page1">
+    <h1>Page 1</h1>
+    <!-- Contenuto della pagina 1 -->
   </div>
-  <script src="fullpage.min.js"></script>
-  <script>
-    new fullpage('#fullpage', {
-      // Opzioni di fullPage.js
-    });
-  </script>
+  <div class="page" id="page2">
+    <h1>Page 2</h1>
+    <!-- Contenuto della pagina 2 -->
+  </div>
+  <div class="page" id="page3">
+    <h1>Page 3</h1>
+    <!-- Contenuto della pagina 3 -->
+  </div>
+  <!-- Aggiungi altre pagine se necessario -->
+  <script src="script.js"></script>
 </body>
 </html>
