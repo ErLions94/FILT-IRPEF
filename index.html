@@ -1,50 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: repeating-linear-gradient( 45deg, blue, yellow 10px, lightgrey 10px, red 20px);     
-    }
-
-    .fixed {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: lightgrey;
-      color: red;
-      text-align: center;
-      max-height: 10%;
-    }
-    
-    .fixed h1 {
-      color: red;
-      font-size: 30px;
-    }
-
-    .fixed p {
-        font-size: 15px; color: blue;}
-
-    .content {
-      margin-top: 10hv; /* Aggiungi uno spazio in cima al contenuto per evitare l'overlap con il div fisso */
-      padding: 00px;
-      font-size: 15px;      
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Text</title>
 </head>
 <body>
-  <div class="fixed">
-    <h1>AGORA FILT</h1>
-    <p>Dipartimento mobilità Filt CGIL</p>
-  </div>
-
-  <div class="content">
-    <p>Contenuto della Pagina</p>
-    <p>...<br>babgalgvksnvkjah asjv uidk kw h  hkes ksh hs hsh <br>kkkkk<br>jskdhfksjvs<br>nvsjbvks hls h<br>nn</p>
-    
-    <!-- Altro contenuto della pagina -->
-  </div>
+    <div class="container">
+        <div class="text small-screen-text" onclick="toggleText()">Testo per schermi inferiori a 480px</div>
+        <div class="text large-screen-text" onclick="toggleText()">Testo per schermi superiori a 480px</div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
